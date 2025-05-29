@@ -1,11 +1,95 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+    <section class="bg-pink-100 py-20 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-pink-800">
+            Bienvenid@ a S’S BAKERY
+        </h1>
+        <p class="mt-4 text-lg text-pink-700">
+            Endulzando tus momentos más especiales con amor y sabor
+        </p>
+        <a
+            href="#catalogo"
+            class="mt-6 inline-block bg-pink-600 text-white py-2 px-6 rounded-full hover:bg-pink-700 transition"
+        >
+            Ver catálogo
+        </a>
+    </section>
+
+    <section id="nosotros" class="py-16 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-pink-800 mb-4">
+            ¿Quién está detrás de S’S BAKERY?
+        </h2>
+        <p class="text-pink-700 text-lg">
+            Nayely, una repostera apasionada que transforma ingredientes en
+            momentos inolvidables. Cada pastel está hecho a mano con cariño,
+            dedicación y un toque único de creatividad.
+        </p>
+    </section>
+
+    <section id="catalogo" class="bg-white py-16 px-6">
+        <h2 class="text-3xl font-semibold text-pink-800 text-center mb-8">
+            Catálogo de Pasteles
+        </h2>
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+        >
+            <div class="bg-pink-50 p-4 rounded-lg shadow">
+                <img
+                    src="/pastel1.jpg"
+                    alt="Pastel de Chocolate"
+                    class="rounded mb-2"
+                />
+                <h3 class="text-xl font-semibold text-pink-800">
+                    Pastel de Chocolate
+                </h3>
+                <p class="text-pink-700">
+                    Suave, intenso y perfecto para cualquier ocasión.
+                </p>
+            </div>
+
+            <div class="bg-pink-50 p-4 rounded-lg shadow">
+                <img
+                    src="/pastel2.jpg"
+                    alt="Pastel de Fresas con Crema"
+                    class="rounded mb-2"
+                />
+                <h3 class="text-xl font-semibold text-pink-800">
+                    Fresas con Crema
+                </h3>
+                <p class="text-pink-700">
+                    Dulzura natural con un toque cremoso que enamora.
+                </p>
+            </div>
+
+            <div class="bg-pink-50 p-4 rounded-lg shadow">
+                <img
+                    src="/pastel3.jpg"
+                    alt="Pastel de Vainilla Clásico"
+                    class="rounded mb-2"
+                />
+                <h3 class="text-xl font-semibold text-pink-800">
+                    Vainilla Clásico
+                </h3>
+                <p class="text-pink-700">
+                    Elegante, suave y perfecto para cualquier celebración.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-pink-50 px-6 text-center">
+        <h2 class="text-3xl font-semibold text-pink-800 mb-4">Contáctanos</h2>
+        <p class="text-pink-700 mb-6">
+            ¿Quieres un pastel personalizado? ¡Escríbenos por WhatsApp!
+        </p>
+        <a
+            href="https://wa.me/521XXXXXXXXXX"
+            class="bg-green-500 text-white py-2 px-6 rounded-full hover:bg-green-600 transition"
+        >
+            Pedir por WhatsApp
+        </a>
+    </section>
 </Layout>
